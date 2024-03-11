@@ -2,4 +2,155 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+header {
+  height: 6rem;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+
+  font-weight: 900;
+}
+
+.header-logo span:nth-child(1) {
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 1vw;
+  background-color: black;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.header-logo span:nth-child(2) {
+  background: #ff9900;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0.6rem;
+}
+
+.header-button-container {
+  display: flex;
+  font-size: small;
+  font-weight: 400;
+  gap: 2rem;
+  margin-right: 20px;
+}
+
+.header-button-container > button {
+  border-radius: 10px;
+  margin: 0;
+  padding: 10px;
+  border: none;
+  background: rgb(71, 146, 243);
+  font: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+main {
+  padding: 0 5rem 0 5rem;
+  min-height: 100vh;
+}
+
+.main-hero {
+  margin-top: 2rem;
+  width: 100%;
+  height: 30rem;
+  border-radius: 7px;
+  background-image: url('./../../static/hero-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.main-hero > h1 {
+  margin: 0 0px 0 20px;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.6rem;
+}
+
+.main-hero > p {
+  margin: 0 20px 20px 20px;
+  color: rgb(182, 180, 180);
+  font-weight: 300;
+}
+
+.section {
+  margin-top: 2rem;
+  display: grid;
+  height: 35rem;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  width: 100%;
+}
+
+.section-card {
+  width: 14rem;
+  height: 18rem;
+  border: 1px solid white;
+  justify-self: center;
+  align-self: center;
+  border-radius: 7px;
+}
+
+.section-card:nth-child(1) {
+  background-image: url('https://assets-prd.ignimgs.com/2022/05/24/call-of-duty-modern-warfare-2-button-02-1653417394041.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-card:nth-child(2) {
+  background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202101/2019/JdvqcPlTYMxXrA1QQJm6TbDX.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-card:nth-child(3) {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-card:nth-child(4) {
+  background-image: url('https://store-images.s-microsoft.com/image/apps.18329.14495541231925689.87cddd19-b73b-401b-b708-13b9eaef685f.9039ccf3-88be-4d02-9a06-fe316c480408?q=90&w=177&h=265');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-card:nth-child(5) {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-card:nth-child(6) {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/e/e8/Battletoads_Coverart.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

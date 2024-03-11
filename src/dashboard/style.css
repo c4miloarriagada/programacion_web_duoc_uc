@@ -1,77 +1,59 @@
 body {
+  margin: 0;
 
-    margin: 0;
+  padding: 0;
 
-    padding: 0;
-
-    background-color: rgb(0, 0, 0);
-
+  background-color: rgb(0, 0, 0);
 }
-
-
 
 /* Estilo para los botones */
 
 .botones_principales {
+  width: 100%;
 
-    width: 100%; 
+  text-align: right;
 
-    text-align: right; 
-
-    background-color: rgb(0, 0, 0);
-
+  background-color: rgb(0, 0, 0);
 }
-
-
 
 .botones_principales a {
+  display: inline-block;
 
-    display: inline-block;
+  padding: 10px 20px;
 
-    padding: 10px 20px;
+  margin-right: 10px;
 
-    margin-right: 10px;
+  color: #fff;
 
-    color: #fff;
+  text-decoration: none;
 
-    text-decoration: none;
+  border-radius: 5px;
 
-    border-radius: 5px;
+  border: none;
 
-    border: none;
+  cursor: pointer;
 
-    cursor: pointer;
-
-    transition: background-color 0.3s ease;
-
+  transition: background-color 0.3s ease;
 }
 
-
-
 .botones_principales a:hover {
-
-    background-color: #0056b3;
-
+  background-color: #0056b3;
 }
 
 /* Estilo para el banner principal */
 
 .encabezado {
+  background-image: url('encabezado_principal.jpg');
 
-    background-image: url('encabezado_principal.jpg'); 
+  background-size: cover;
 
-    background-size: cover; 
+  background-position: center;
 
-    background-position: center; 
+  color: #e7d20e;
 
-    color: #e7d20e; 
+  text-align: center;
 
-    text-align: center; 
+  padding: 20px;
 
-    padding: 20px; 
-
-    height: 300px;
-
+  height: 300px;
 }
-
-Press Shift + Ta
