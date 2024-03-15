@@ -154,3 +154,30 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.container {
+  min-height: 30rem;
+  border: 1px grey solid;
+  border-radius: 0.4rem;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  min-height: 20rem;
+  width: 100%;
+}
+
+.formulario > form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.error {
+  color: red;
+}
