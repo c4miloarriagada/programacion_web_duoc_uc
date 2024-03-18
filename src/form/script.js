@@ -82,3 +82,5 @@ const validateAge = (fechaNacimiento) => {
   const age = today.getFullYear() - birthday.getFullYear();
   return age >= 13;
 }
+
+

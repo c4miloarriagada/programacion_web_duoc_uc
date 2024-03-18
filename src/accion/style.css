@@ -2,62 +2,73 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #191919;
 }
 
-header {
-  height: 6rem;
+.navbar {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  border-bottom: 1px solid white;
+  height: 63px;
+  padding: 20px 20px;
+  background-color: #212529;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
-
-  font-weight: 900;
+  z-index: 100;
 }
 
-.header-logo span:nth-child(1) {
+.logo {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo span {
+  background-color: #ff9900;
+  color: #000;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
   margin-left: 20px;
-  text-align: center;
-  border-radius: 1vw;
-  background-color: black;
-  padding: 8px;
-  color: #ffffff;
+  padding: 10px 10px 10px 10px;
 }
 
-.header-logo span:nth-child(2) {
-  background: #ff9900;
-  text-align: center;
-  border-radius: 1rem;
-  padding: 0.6rem;
+.navbar a:hover {
+  background-color: #326394;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
 }
 
-.header-button-container {
-  display: flex;
-  font-size: small;
-  font-weight: 400;
-  gap: 2rem;
-  margin-right: 20px;
-}
-
-.header-button-container > button {
-  border-radius: 10px;
-  margin: 0;
-  padding: 10px;
-  border: none;
-  background: rgb(71, 146, 243);
-  font: inherit;
-  color: white;
-  cursor: pointer;
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }
 
 main {
@@ -70,7 +81,7 @@ main {
   width: 100%;
   height: 30rem;
   border-radius: 7px;
-  background-image: url('./../../static/hero-img.jpg');
+  background-image: url("./../../static/hero-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,42 +125,42 @@ main {
 }
 
 .section-card:nth-child(1) {
-  background-image: url('https://assets-prd.ignimgs.com/2022/05/24/call-of-duty-modern-warfare-2-button-02-1653417394041.jpg');
+  background-image: url("https://assets-prd.ignimgs.com/2022/05/24/call-of-duty-modern-warfare-2-button-02-1653417394041.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .section-card:nth-child(2) {
-  background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202101/2019/JdvqcPlTYMxXrA1QQJm6TbDX.png');
+  background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202101/2019/JdvqcPlTYMxXrA1QQJm6TbDX.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .section-card:nth-child(3) {
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg');
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .section-card:nth-child(4) {
-  background-image: url('https://store-images.s-microsoft.com/image/apps.18329.14495541231925689.87cddd19-b73b-401b-b708-13b9eaef685f.9039ccf3-88be-4d02-9a06-fe316c480408?q=90&w=177&h=265');
+  background-image: url("https://store-images.s-microsoft.com/image/apps.18329.14495541231925689.87cddd19-b73b-401b-b708-13b9eaef685f.9039ccf3-88be-4d02-9a06-fe316c480408?q=90&w=177&h=265");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .section-card:nth-child(5) {
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg');
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .section-card:nth-child(6) {
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/e/e8/Battletoads_Coverart.png');
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/e/e8/Battletoads_Coverart.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -161,23 +172,4 @@ main {
   border-radius: 0.4rem;
   margin-top: 4rem;
   padding: 2rem;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  min-height: 20rem;
-  width: 100%;
-}
-
-.formulario > form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 1rem;
-}
-
-.error {
-  color: red;
 }
