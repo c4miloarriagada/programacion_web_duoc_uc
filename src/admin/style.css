@@ -95,15 +95,58 @@
 /* Estilo para el contenido */
 
 .container {
-  max-width: 1170px;
-  margin: 10px;
-  padding: 0 15px;
+  max-width: 90dvh;
+  margin-top: 80px;
+  min-width: 80dvw;
   box-sizing: border-box;
   background-color: #1c0868;
   color: #fff;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+}
+
+.container-form {
+  max-width: 400px;
+  margin-top: 30px;
+  padding: 0 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #1c0868;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container-form form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.container-form form label {
+  margin-bottom: 10px;
+}
+.container-form form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  max-width: 800px;
+}
+
+.container-form form select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 .button {
@@ -120,4 +163,12 @@
 .button a {
   color: #fff;
   text-decoration: none;
+}
+
+main {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
