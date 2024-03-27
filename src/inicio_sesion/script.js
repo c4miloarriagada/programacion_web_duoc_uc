@@ -1,19 +1,27 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("form");
 
-function validarCorreoElectronico(email) {
-    const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    
-    return regexCorreo.test(email);
-}
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); 
 
+        const passwordInput = document.getElementById("password");
+        const password = passwordInput.value;
 
-function validarContrasena(password) {
-    if (password.length < 8 || password.length > 12) {
-        return false;
-    }
-    
+        // Validación de minimo y margen de caracteres
+        if (password.length < 8 || password.length > 12) {
+            alert("La contraseña debe tener entre 8 y 12 caracteres.");
+            return; 
+        }
 
-    const regexContrasena = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).+$/;
-    
-    return regexContrasena.test(password);
-}
+        // Validación de letras y números
+        const containsLetters = /[a-zA-Z]/.test(password);
+        const containsNumbers = /[0-9]/.test(password);
+        if (!containsLetters || !containsNumbers) {
+            alert("La contraseña debe contener tanto letras como números.");
+            return;
+        }
 
+        
+        form.submit();
+    });
+});
