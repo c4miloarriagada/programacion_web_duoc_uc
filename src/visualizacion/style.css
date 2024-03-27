@@ -150,6 +150,10 @@
   & button {
     margin-top: 15px;
   }
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 @media screen and (max-width: 760px) {

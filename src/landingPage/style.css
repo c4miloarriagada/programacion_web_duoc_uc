@@ -152,6 +152,9 @@
   height: 100%;
   min-width: max-content;
   transition: transform 0.3s ease;
+  & a {
+    text-decoration: none;
+  }
 }
 .item:hover {
   cursor: pointer;
@@ -180,4 +183,8 @@
   width: 100%;
   height: 80%;
   border-radius: 0 0 6px 6px;
+}
+
+a {
+  text-decoration: none;
 }
