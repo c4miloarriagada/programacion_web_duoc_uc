@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
@@ -69,6 +69,31 @@
   }
 }
 
+.navbar a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Estilo para el carrito */
+
+#cuenta-carrito {
+  background-color: #ff9900;
+  color: #000;
+  font-weight: bold;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+  line-height: 15px;
+}
+
 .contenedor {
   margin-top: 63px;
   height: 60rem;
@@ -83,7 +108,7 @@
   height: 25rem;
   border-radius: 6px;
   margin-top: 6rem;
-  background-image: url('https://cdn.openart.ai/published/PttBpHktfiafrOgaCjna/pJuW9-tZ_b97O_1024.webp');
+  background-image: url("https://cdn.openart.ai/published/PttBpHktfiafrOgaCjna/pJuW9-tZ_b97O_1024.webp");
 }
 
 .contenedor__banner {
@@ -92,7 +117,7 @@
   border-radius: 6px;
   margin-top: 2rem;
   background-repeat: no-repeat;
-  background-image: url('https://media.gamestop.com/i/gamestop/SpendMoreSaveMore_EG_1736x224_Full_Blade_D.webp');
+  background-image: url("https://media.gamestop.com/i/gamestop/SpendMoreSaveMore_EG_1736x224_Full_Blade_D.webp");
   background-size: cover;
   background-position: center;
 }

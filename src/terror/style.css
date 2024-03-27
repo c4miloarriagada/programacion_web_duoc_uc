@@ -65,6 +65,32 @@
     display: block;
   }
 }
+
+.navbar a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Estilo para el carrito */
+
+#cuenta-carrito {
+  background-color: #ff9900;
+  color: #000;
+  font-weight: bold;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+  line-height: 15px;
+}
+
 /* Estilo para el banner principal */
 
 .encabezado {
@@ -86,9 +112,7 @@
   height: 300px;
 }
 
-/* Estilo para el contenido juegos */
-
-.contenedor {
+#juegos-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,77 +120,47 @@
   margin-top: 20px;
 }
 
-#ResidentEvil2 {
-  background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/883710/header.jpg?t=1701395502);
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  background-position: right;
-  border-radius: 10%;
-  margin: 10px;
-}
-
-#ResidentEvil2 p {
+.juego {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 330px;
+  max-width: 300px;
+  border-radius: 8px;
+  margin: auto;
+  background-color: #2e5f882d;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
   color: white;
-  position: relative;
-  top: 15%;
-  padding: 1rem;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
 }
 
-#ResidentEvil2 p:hover {
-  opacity: 1;
+.juego img {
+  width: 90%;
+  aspect-ratio: 16/9;
+  margin: 5px;
 }
 
-#TheEvilWithin2 {
-  background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/268050/header.jpg?t=1602600735);
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10%;
-  margin: 10px;
+.juego h3 {
+  margin: 5px;
 }
 
-#TheEvilWithin2 p {
-  color: black;
-  position: relative;
-  top: 15%;
-  padding: 1rem;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
+.juego p {
+  margin: 0;
+  order: 1;
+  margin: 5px;
 }
 
-#TheEvilWithin2 p:hover {
-  opacity: 1;
+.juego button {
+  order: 2;
+  margin: 5px;
+  border-radius: 7px;
+  background-color: #fff;
 }
 
-#UntilDawn {
-  background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/2172010/header.jpg?t=1707229518);
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  background-position: left;
-  border-radius: 10%;
-  margin: 10px;
-}
-
-#UntilDawn p {
-  color: white;
-  position: relative;
-  top: 7%;
-  padding: 1rem;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-#UntilDawn p:hover {
-  opacity: 1;
+.juego button:hover {
+  background-color: lightskyblue;
+  border-radius: 7px;
 }

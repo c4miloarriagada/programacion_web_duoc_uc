@@ -76,6 +76,30 @@ header {
   }
 }
 
+/* Estilo para el carrito */
+
+.navbar a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#cuenta-carrito {
+  background-color: #ff9900;
+  color: #000;
+  font-weight: bold;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+  line-height: 15px;
+}
 /* Estilo para el banner principal */
 
 .encabezado {
